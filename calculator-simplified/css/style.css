@@ -1,0 +1,43 @@
+.row{
+  max-width: 320px;
+  padding:5px;
+}
+
+.container{
+  margin:auto;
+  max-width:300px;
+}
+
+#calc {
+    width: 320px;
+    min-height: 200px;
+    max-height: 430px;
+    background-color: #CCC;
+    box-shadow: 10px 10px 5px #888888; 
+    font-family: Orbitron;
+}
+
+.btn{
+  width:60px;
+  background-color: #8888FF;
+  color:black;
+}
+
+#display{
+  width:250px;
+  padding-top: 0px;
+  height: 50px;
+  background-color: rgba(0,150,40,.2);
+  font-size:38px;
+}
+
+.btn-lg{
+  color:blue;
+  min-width: 48px;
+}
+
+#main{
+  min-width: 100%;
+  min-height: 100%;
+}
+

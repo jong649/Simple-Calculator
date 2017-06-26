@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator Simplified</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <html lang="en">
+  <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+  <head>
+    <meta name='viewport' content='width=device-width,initial scale=1'>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    
+    <div class="container text-center" id="calc"><h3>Calculator</h3>
+  <div class="row">
+    <form name="calc">
+      <input name="display" id="display" onkeypress="return event.charCode >= 48 && event.charCode <= 57" type="text" class="screen text-right" readonly>
+    </form>
+      </div>
+  <div class="row">
+    <input type=button class="btn btn-danger" value="AC" OnClick="calc.display.value=''">
+    <input type=button class="btn btn-warning" value="C" OnClick="calc.display.value=''">
+    <input type=button class="btn" value="%" OnClick="calc.display.value='%'">
+    <input type=button class="btn" value="÷" OnClick="calc.display.value+=' / '">
+  </div>
+  <div class="row">
+    <input type=button class="btn" id="7" value="7" OnClick="calc.display.value+='7'">
+    <input type=button class="btn" value="8" OnClick="calc.display.value+='8'">
+    <input type=button class="btn" value="9" OnClick="calc.display.value+='9'">
+    <input type=button class="btn" value="x" OnClick="calc.display.value+='*'">
+  </div>
+  <div class="row">
+    <input type=button class="btn" value="4" OnClick="calc.display.value+='4'">
+    <input type=button class="btn" value="5" OnClick="calc.display.value+='5'">
+    <input type=button class="btn" value="6" OnClick="calc.display.value+='6'">
+    <input type=button class="btn" value="-" OnClick="calc.display.value+='-'">
+  </div>
+  <div class="row">
+    <input type=button class="btn" value="1" OnClick="calc.display.value+='1'">
+    <input type=button class="btn" value="2" OnClick="calc.display.value+='2'">
+    <input type=button class="btn" value="3" OnClick="calc.display.value+='3'">
+    <input type=button class="btn" value="+" OnClick="calc.display.value+='+'">
+  </div>
+  <div class="row">
+    <input type=button class="btn" value="." OnClick="calc.display.value+='.'">
+    <input type=button class="btn" value="0" OnClick="calc.display.value+='0'">
+    <input type=button class="btn" value="+" OnClick="calc.display.value+='+ / -'">
+    <input class="btn btn-success" type=button value="=" OnClick="calc.display.value=eval(calc.display.value)">
+  </div>
+</div>
+
+      </html>
+  
+  
+</body>
+</html>
